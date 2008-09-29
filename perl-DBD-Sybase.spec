@@ -28,7 +28,7 @@ MS-SQL 7 or 2000 database server from a UNIX/Linux host.
 %build
 export SYBASE=%{_prefix}
 echo -e "\n\n\n\n\n\n" | %{__perl} Makefile.PL INSTALLDIRS=vendor
-%make OPTIMIZE="%{optflags}" LD_RUN_PATH=""
+make OPTIMIZE="%{optflags}" LD_RUN_PATH=""
 
 %install
 rm -rf %{buildroot}
