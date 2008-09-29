@@ -11,7 +11,9 @@ Source0:	http://search.cpan.org/CPAN/authors/id/M/ME/MEWP/%{module}-%{version}.t
 Patch0:		DBD-Sybase-lib64_fixes.diff
 Patch1:		DBD-Sybase-build_fix.diff
 BuildRequires:	freetds-devel
+BuildRequires:	gettext-devel
 BuildRequires:	perl-DBI >= 1.00
+BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
