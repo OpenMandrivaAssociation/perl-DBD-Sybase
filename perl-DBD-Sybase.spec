@@ -1,5 +1,5 @@
 %define upstream_name    DBD-Sybase
-%define upstream_version 1.09
+%define upstream_version 1.10
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -10,13 +10,12 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/~mewp/DBD-Sybase/
 Source0:	http://search.cpan.org/CPAN/authors/id/M/ME/MEWP/%{upstream_name}-%{upstream_version}.tar.gz
-Patch0:		DBD-Sybase-lib64_fixes.diff
-Patch1:		DBD-Sybase-build_fix.diff
 
 BuildRequires:	freetds-devel
 BuildRequires:	gettext-devel
 BuildRequires:	perl-DBI >= 1.00
 BuildRequires:	perl-devel
+
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
@@ -26,13 +25,11 @@ MS-SQL 7 or 2000 database server from a UNIX/Linux host.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-%patch0 -p1
-%patch1 -p0
 
 %build
 export SYBASE=%{_prefix}
 echo -e "\n\n\n\n\n\n" | %{__perl} Makefile.PL INSTALLDIRS=vendor
-make OPTIMIZE="%{optflags}" LD_RUN_PATH=""
+%make OPTIMIZE="%{optflags}" LD_RUN_PATH=""
 
 %install
 rm -rf %{buildroot}
