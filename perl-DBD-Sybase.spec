@@ -1,5 +1,5 @@
 %define upstream_name    DBD-Sybase
-%define upstream_version 1.11
+%define upstream_version 1.12
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
