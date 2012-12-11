@@ -46,3 +46,32 @@ rm -rf %{buildroot}
 %dir %{perl_vendorarch}/auto/DBD/Sybase
 %attr(0755,root,root) %{perl_vendorarch}/auto/DBD/Sybase/Sybase.so
 %{_mandir}/man3/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.120.0-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Thu Apr 28 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.120.0-1
++ Revision: 659897
+- update to new version 1.12
+- update to new version 1.11
+
+* Sun Apr 18 2010 Jérôme Quelin <jquelin@mandriva.org> 1.100.0-1mdv2010.1
++ Revision: 536457
+- update to 1.10 (remove mdv patches)
+
+* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.90.0-1mdv2010.0
++ Revision: 403094
+- rebuild using %%perl_convert_version
+
+* Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 1.09-1mdv2009.0
++ Revision: 289562
+- fix deps
+- try to fix build
+- import perl-DBD-Sybase
+
+
+* Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 1.09-1mdv2009.0
+- initial Mandriva package
