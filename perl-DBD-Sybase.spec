@@ -1,15 +1,15 @@
 %define upstream_name    DBD-Sybase
-%define upstream_version 1.12
+%define upstream_version 1.15
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Version:    %perl_convert_version 1.15
+Release:	1
 
 Summary:	Sybase database driver for the DBI module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/~mewp/DBD-Sybase/
-Source0:	http://search.cpan.org/CPAN/authors/id/M/ME/MEWP/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/M/ME/MEWP/DBD-Sybase-1.15.tar.gz
 
 BuildRequires:	freetds-devel
 BuildRequires:	gettext-devel
@@ -75,3 +75,4 @@ rm -rf %{buildroot}
 
 * Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 1.09-1mdv2009.0
 - initial Mandriva package
+
