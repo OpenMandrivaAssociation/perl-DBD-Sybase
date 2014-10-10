@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 1.15
-Release:	1
+Release:	2
 
 Summary:	Sybase database driver for the DBI module
 License:	GPL+ or Artistic
