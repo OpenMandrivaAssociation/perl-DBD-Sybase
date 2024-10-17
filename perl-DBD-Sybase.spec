@@ -8,7 +8,7 @@ Release:	3
 Summary:	Sybase database driver for the DBI module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/~mewp/DBD-Sybase/
+Url:		https://search.cpan.org/~mewp/DBD-Sybase/
 Source0:	http://www.cpan.org/authors/id/M/ME/MEWP/DBD-Sybase-1.15.tar.gz
 
 BuildRequires:	freetds-devel
