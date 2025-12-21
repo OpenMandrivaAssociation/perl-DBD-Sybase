@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/~mewp/DBD-Sybase/
 Source0:	http://www.cpan.org/authors/id/M/ME/MEWP/DBD-Sybase-1.15.tar.gz
 
+BuildRequires:	make
 BuildRequires:	freetds-devel
 BuildRequires:	gettext-devel
 BuildRequires:	perl-DBI >= 1.00
