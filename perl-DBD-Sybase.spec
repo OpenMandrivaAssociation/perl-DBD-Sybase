@@ -1,15 +1,15 @@
 %define upstream_name    DBD-Sybase
-%define upstream_version 1.15
+%define upstream_version 1.27
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 1.15
-Release:	3
+Version:    %{upstream_version}
+Release:	1
 
 Summary:	Sybase database driver for the DBI module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/~mewp/DBD-Sybase/
-Source0:	http://www.cpan.org/authors/id/M/ME/MEWP/DBD-Sybase-1.15.tar.gz
+Url:		https://github.com/mpeppler/DBD-Sybase
+Source0:	https://cpan.metacpan.org/authors/id/M/ME/MEWP/DBD-Sybase-1.27.tar.gz
 
 BuildRequires:	make
 BuildRequires:	freetds-devel
