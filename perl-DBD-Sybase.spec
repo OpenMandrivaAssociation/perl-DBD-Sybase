@@ -1,9 +1,7 @@
 %define upstream_name    DBD-Sybase
-%define upstream_version 1.27
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    1.27
+Release:	2
 
 Summary:	Sybase database driver for the DBI module
 License:	GPL+ or Artistic
@@ -25,7 +23,7 @@ to Sybase databases. With FreeTDS DBD::Sybase can be also used to query a
 MS-SQL 7 or 2000 database server from a UNIX/Linux host.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 export SYBASE=%{_prefix}
@@ -65,9 +63,7 @@ rm -rf %{buildroot}
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.90.0-1mdv2010.0
 + Revision: 403094
-- rebuild using %%perl_convert_version
-
-* Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 1.09-1mdv2009.0
+- rebuild using %1.27 Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 1.09-1mdv2009.0
 + Revision: 289562
 - fix deps
 - try to fix build
